@@ -10,4 +10,4 @@ ENV PATH /opt/conda/envs/$(head -1 /tmp/environment.yml | cut -d' ' -f2)/bin:$PA
 
 ENV CONDA_DEFAULT_ENV $(head -1 /tmp/environment.yml | cut -d' ' -f2)
 
-ENTRYPOINT ["conda", "run", "-n"]
+# ENTRYPOINT ["conda", "run", "-n"]
