@@ -1,4 +1,4 @@
-FROM continuumio/miniconda3:25.1.1-2
+FROM shawoo/miniconda3:25.1.1-2
 
 ADD environment.yml /tmp/environment.yml
 RUN conda env create -f /tmp/environment.yml
