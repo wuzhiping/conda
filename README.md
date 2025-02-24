@@ -12,6 +12,7 @@ docker run --rm -it -p 5000:8888 -v $PWD:/src \
                               jupyter lab --allow-root --ip=0.0.0.0
 
 docker run --rm -it -p 5000:8000 <myCondaEnvImg> \
-                    conda run -n <py310> -v --live-stream \
-                       fastapi dev main.py --host 0.0.0.0
+                            conda run -n <py310> \
+                                -v --live-stream \
+              fastapi dev main.py --host 0.0.0.0
 ```
