@@ -10,7 +10,7 @@ dependencies:
   - pip:
     - -i http://mirrors.aliyun.com/pypi/simple/
     - --trusted-host mirrors.aliyun.com
-    - langfuse=2.59.3
-    - langchain=0.3.19
+    - langfuse==2.59.3
+    - langchain==0.3.19
   - jupyterlab
   - fastapi[standard]
